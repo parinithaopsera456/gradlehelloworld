@@ -1,0 +1,692 @@
+{
+  "_id": "67aba938f35d8502fb74092d",
+  "workflow": {
+    "source": {
+      "name": "",
+      "service": "github",
+      "accountId": "6705127d20f7260012756922",
+      "workspace": "",
+      "workspaceName": "",
+      "repository": "gradlehelloworld",
+      "repoId": "prasanna2482/gradlehelloworld",
+      "projectId": "prasanna2482/gradlehelloworld",
+      "gitUrl": "https://github.com/prasanna2482/gradlehelloworld",
+      "sshUrl": "git@github.com:prasanna2482/gradlehelloworld.git",
+      "branch": "demo1",
+      "secondary_branches": [],
+      "key": "",
+      "trigger_active": false,
+      "isPushEvent": true,
+      "isPrEvent": false,
+      "isMonitored": false,
+      "sendStepUpdates": false,
+      "prCreatedEvent": true,
+      "prApprovedEvent": false,
+      "gitExportEnabled": true,
+      "gitExportPath": "pipelineconfig",
+      "dynamicSettings": true,
+      "allowDynamicSettingsInUi": true,
+      "allowPipelineParametersInUi": true,
+      "allowDynamicSettingsInSalesforceUi": false,
+      "enableBranchSwitch": false,
+      "opseraEdgeToolId": "",
+      "useOpseraEdgeProxy": false,
+      "baselineFromSuccessfulRun": false,
+      "branch_pattern": ""
+    },
+    "schedule": {
+      "start_date": null,
+      "end_date": null,
+      "frequency": ""
+    },
+    "last_step": {
+      "status": "reset",
+      "check_count": 0,
+      "step_id": ""
+    },
+    "plan": [
+      {
+        "name": "Gradle Build",
+        "notes": "",
+        "description": "",
+        "tool": {
+          "tool_identifier": "jenkins",
+          "configuration": {
+            "jobType": "BUILD",
+            "toolConfigId": "642fa4756736ad0088b81da8",
+            "jenkinsUrl": "https://jenkins-nekisj04.prodqa-private.opsera.io/",
+            "jenkinsPort": "",
+            "jUserId": "admin",
+            "jAuthToken": "",
+            "jobName": "BUILD_67aba938f35d8502fb74092d_5ec7c8cedc73d971e2860b68",
+            "toolJobId": "650eceeeb615ee0012df6329",
+            "toolJobType": [
+              "BUILD"
+            ],
+            "rollbackBranchName": "",
+            "stepIdXML": "",
+            "sfdcDestToolId": "",
+            "destAccountUsername": "",
+            "sfdcToolId": "",
+            "accountUsername": "",
+            "projectId": "prasanna2482/gradlehelloworld",
+            "defaultBranch": "demo1",
+            "dockerName": "gradlehello-prod",
+            "useDockerDynamicName": false,
+            "dockerDynamicName": "",
+            "dockerTagName": "",
+            "dockerPath": "",
+            "buildType": "gradle",
+            "gitToolId": "6705127d20f7260012756922",
+            "repoId": "prasanna2482/gradlehelloworld",
+            "gitUrl": "https://github.com/prasanna2482/gradlehelloworld",
+            "sshUrl": "git@github.com:prasanna2482/gradlehelloworld.git",
+            "service": "github",
+            "gitCredential": "Github-Prasanna",
+            "gitUserName": "prasanna2482",
+            "repository": "gradlehelloworld",
+            "branch": "demo1",
+            "isOrgToOrg": false,
+            "isFullBackup": false,
+            "sfdcUnitTestType": "",
+            "workspace": "",
+            "agentLabels": "generic-linux",
+            "isNewBranch": false,
+            "isManualRollBackBranch": false,
+            "hasUpstreamBranch": false,
+            "workspaceDeleteFlag": true,
+            "gitBranch": "demo1",
+            "customParameters": [],
+            "terraformStepId": "",
+            "useTerraformOutput": false,
+            "job_type": "opsera-job",
+            "xcodeVersion": "",
+            "dynamicTag": false,
+            "dockerTagType": "commit_sha",
+            "dockerDynamicTagName": "",
+            "specifyCommitIdChar": false,
+            "commitIdCharDirection": "prefix",
+            "commitIdCharLimit": 7,
+            "runtimeArguments": "",
+            "dependencies": {
+              "java": "java-11"
+            },
+            "dependencyType": [
+              {
+                "name": "Java openJDK Version 11",
+                "dependencyType": "java",
+                "version": "11"
+              }
+            ],
+            "ruleIds": [],
+            "useBuildStepResource": false,
+            "buildStepId": "",
+            "commands": "",
+            "environmentVariables": [],
+            "enableQuickDeploy": false,
+            "ignoreWarning": false,
+            "filePath": "",
+            "schemeName": "",
+            "projectWorkspace": "",
+            "configurationType": "",
+            "scriptType": "opsera",
+            "developerTeamId": "",
+            "credentailsId": "",
+            "artifactoryId": "",
+            "artifactoryName": "",
+            "azureCredentialId": "",
+            "resource": "https://management.azure.com",
+            "azureRegistryName": "",
+            "dockerPort": "",
+            "repositoryName": "",
+            "type": "",
+            "port": "",
+            "provisioningProfilePath": "",
+            "codeSignIdentity": "",
+            "secondaryTagEnabled": false,
+            "secondaryTags": [],
+            "enableOutputVariables": false,
+            "ignoreTestExecution": false,
+            "pipelineId": "67aba938f35d8502fb74092d",
+            "_id": "5ec7c8cedc73d971e2860b68",
+            "modifiedFilesOrigin": "git",
+            "autoScaleEnable": true,
+            "workspaceName": "",
+            "jobDescription": "",
+            "buildToolVersion": "6.3",
+            "gradleTask": "build",
+            "mavenTask": "",
+            "customMavenSettings": false,
+            "scriptId": "",
+            "buildTool": "",
+            "commandLineArgs": "",
+            "gitCommitId": "4ad3aa0a54d327c2c20cf3c8614913a801f95a39",
+            "dockerSecrets": [],
+            "outputFileName": "hello-world-1.0.jar",
+            "outputPath": "build/libs",
+            "customScript": false,
+            "inputFileName": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null,
+          "job_type": "opsera-job"
+        },
+        "trigger": [],
+        "type": [
+          "build"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "gradle-build_5ec7c8cedc73d971e2860b68"
+          }
+        ],
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "runCount": 204,
+            "action": "START",
+            "dockerName": "gradlehello-prod",
+            "dockerTagName": "",
+            "gitCommitId": "4ad3aa0a54d327c2c20cf3c8614913a801f95a39",
+            "hasDowloadableReport": false,
+            "gitUrl": "https://github.com/prasanna2482/gradlehelloworld",
+            "artifact": "hello-world-1.0.jar",
+            "gitCommitMessage": "Rename Dockerfile to Dockerfile.dev",
+            "gitCommitAuthor": "Prasanna R",
+            "artifactType": "gradle",
+            "gitBranch": "demo1",
+            "repository": "gradlehelloworld",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 116,
+            "jobName": "BUILD_67aba938f35d8502fb74092d_5ec7c8cedc73d971e2860b68"
+          },
+          "updatedAt": "2025-06-06T05:38:10.200Z"
+        },
+        "active": true,
+        "dependencies": [],
+        "updatedAt": "2020-05-22T12:42:54.717Z",
+        "_id": "5ec7c8cedc73d971e2860b68"
+      },
+      {
+        "name": "Docker Build",
+        "notes": "",
+        "description": "",
+        "tool": {
+          "tool_identifier": "jenkins",
+          "configuration": {
+            "jobType": "BUILD",
+            "toolConfigId": "642fa4756736ad0088b81da8",
+            "jenkinsUrl": "https://jenkins-nekisj04.prodqa-private.opsera.io/",
+            "jenkinsPort": "",
+            "jUserId": "admin",
+            "jAuthToken": "",
+            "jobName": "BUILD_67aba938f35d8502fb74092d_67aba99ce672a20012bde52a",
+            "toolJobId": "6536de8f64b1d70044a82ed3",
+            "toolJobType": [
+              "BUILD"
+            ],
+            "rollbackBranchName": "",
+            "stepIdXML": "",
+            "sfdcDestToolId": "",
+            "destAccountUsername": "",
+            "sfdcToolId": "",
+            "accountUsername": "",
+            "projectId": "",
+            "defaultBranch": "master",
+            "dockerName": "gradlehello",
+            "useDockerDynamicName": false,
+            "dockerDynamicName": "",
+            "dockerTagName": "4ad3aa0",
+            "dockerPath": "",
+            "buildType": "docker",
+            "gitToolId": "",
+            "repoId": "",
+            "gitUrl": "",
+            "sshUrl": "",
+            "service": "github",
+            "gitCredential": "",
+            "gitUserName": "parinithaopsera456",
+            "repository": "",
+            "branch": "master",
+            "isOrgToOrg": false,
+            "isFullBackup": false,
+            "sfdcUnitTestType": "",
+            "workspace": "",
+            "agentLabels": "generic-linux",
+            "isNewBranch": false,
+            "isManualRollBackBranch": false,
+            "hasUpstreamBranch": false,
+            "workspaceDeleteFlag": true,
+            "gitBranch": "master",
+            "customParameters": [],
+            "terraformStepId": "",
+            "useTerraformOutput": false,
+            "job_type": "opsera-job",
+            "xcodeVersion": "",
+            "dynamicTag": true,
+            "dockerTagType": "commit_sha",
+            "dockerDynamicTagName": "",
+            "specifyCommitIdChar": true,
+            "commitIdCharDirection": "prefix",
+            "commitIdCharLimit": 7,
+            "runtimeArguments": "",
+            "dependencyType": "",
+            "ruleIds": [],
+            "useBuildStepResource": true,
+            "buildStepId": "5ec7c8cedc73d971e2860b68",
+            "commands": "mkdir -p ${WORKSPACE}/build/libs/ \ncp -R ${BUILD_WORKSPACE}/build/libs/hello-world-1.0.jar ${WORKSPACE}/build/libs\nmv Dockerfile.dev Dockerfile",
+            "environmentVariables": [],
+            "enableQuickDeploy": false,
+            "ignoreWarning": false,
+            "filePath": "",
+            "schemeName": "",
+            "projectWorkspace": "",
+            "configurationType": "",
+            "scriptType": "opsera",
+            "developerTeamId": "",
+            "credentailsId": "",
+            "artifactoryId": "",
+            "artifactoryName": "",
+            "azureCredentialId": "",
+            "resource": "https://management.azure.com",
+            "azureRegistryName": "",
+            "dockerPort": "",
+            "repositoryName": "",
+            "type": "",
+            "port": "",
+            "provisioningProfilePath": "",
+            "codeSignIdentity": "",
+            "secondaryTagEnabled": false,
+            "secondaryTags": [],
+            "enableOutputVariables": true,
+            "ignoreTestExecution": false,
+            "pipelineId": "67aba938f35d8502fb74092d",
+            "_id": "67aba99ce672a20012bde52a",
+            "modifiedFilesOrigin": "git",
+            "autoScaleEnable": true,
+            "jobDescription": "",
+            "buildToolVersion": "6.3",
+            "gradleTask": "",
+            "mavenTask": "",
+            "customMavenSettings": false,
+            "scriptId": "",
+            "buildTool": "",
+            "commandLineArgs": "",
+            "dockerSecrets": [],
+            "dockerPrivateRepo": false,
+            "gitCommitId": "4ad3aa0a54d327c2c20cf3c8614913a801f95a39",
+            "outputCustomParameters": [
+              {
+                "parameterId": "6826b22143c5c40ad964abff",
+                "parameterName": "opsera-imagetag",
+                "outputKey": "docker_tag_name"
+              },
+              {
+                "parameterName": "opsera-imagename",
+                "parameterId": "6826b212f4413b4d4cd6e72a",
+                "outputKey": "docker_name"
+              }
+            ]
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null,
+          "job_type": "opsera-job"
+        },
+        "trigger": [],
+        "type": [
+          "build"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "docker-build_67aba99ce672a20012bde52a"
+          }
+        ],
+        "last_status": {
+          "data": {
+            "jenkinsConsoleLog": "",
+            "runCount": 204,
+            "action": "START",
+            "dockerName": "gradlehello",
+            "dockerTagName": "4ad3aa0",
+            "gitCommitId": "4ad3aa0a54d327c2c20cf3c8614913a801f95a39",
+            "hasDowloadableReport": false,
+            "gitUrl": "https://github.com/prasanna2482/gradlehelloworld",
+            "artifact": "gradlehello:4ad3aa0",
+            "artifactType": "docker",
+            "gitBranch": "4ad3aa0a54d327c2c20cf3c8614913a801f95a39",
+            "repository": "",
+            "status": "SUCCESS",
+            "message": "Job is Successful",
+            "buildNumber": 45,
+            "jobName": "BUILD_67aba938f35d8502fb74092d_67aba99ce672a20012bde52a"
+          },
+          "updatedAt": "2025-06-06T05:39:13.117Z"
+        },
+        "active": true,
+        "dependencies": [
+          "5ec7c8cedc73d971e2860b68"
+        ],
+        "updatedAt": "2025-02-11T19:48:44.923Z",
+        "_id": "67aba99ce672a20012bde52a"
+      },
+      {
+        "name": "ACR Push",
+        "description": "",
+        "tool": {
+          "tool_identifier": "run_job",
+          "configuration": {
+            "scripts": [
+              {
+                "active": true,
+                "type": "manual_entry",
+                "scriptRepository": "",
+                "scriptName": "ACR Push",
+                "scriptPath": "",
+                "scriptLibraryId": "",
+                "script": "apt install sudo\nsudo apt update\nsudo apt install docker.io -y\ndocker --version\nsudo dockerd &\ncurl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash\naz version\n#az login --service-principal --username ******** --tenant ******** --password ********\n# Get token\nTOKEN=$(az acr login --name testazurecontainer1 --expose-token --query accessToken -o tsv)\n# Log in to ACR with Docker using the token (if Docker works at all)\ndocker login testazurecontainer1.azurecr.io -u 00000000-0000-0000-0000-000000000000 -p \"$TOKEN\"\ndocker load --input /home/jenkins/agent/workspace/.docker-images/67aba938f35d8502fb74092d_67aba99ce672a20012bde52a_113.tar\ndocker tag gradlehello:32552af testacrcontainerregistry2.azurecr.io/gradlehello:32552af\ndocker push testacrcontainerregistry2.azurecr.io/gradlehello:production",
+                "scriptUrl": "",
+                "tags": [],
+                "scriptToolType": ""
+              }
+            ],
+            "environmentVariables": [],
+            "secretEnvironmentVariables": [],
+            "plugins": [
+              {
+                "name": "Plugin 1",
+                "plugin": "registry_tool",
+                "configuration": {
+                  "toolIdentifier": "azure_cli",
+                  "toolId": "67c56035e1083700121afefa",
+                  "connectionVariables": []
+                }
+              }
+            ]
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "script"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "acr-push_682587f71faa27e06d250d45"
+          }
+        ],
+        "active": true,
+        "dependencies": [
+          "67aba99ce672a20012bde52a"
+        ],
+        "updatedAt": "2025-05-15T06:21:43.219Z",
+        "_id": "682587f71faa27e06d250d45"
+      },
+      {
+        "name": "Azure CLI",
+        "description": "",
+        "tool": {
+          "tool_identifier": "azure_cli",
+          "configuration": {
+            "azureToolConfigId": "6762aa6bfb14d1003364330d",
+            "azureCredentialId": "6762ced2f5235d00e77c28bf",
+            "scriptType": "inline",
+            "commands": "az acr import \\\n  --name testazurecontainer2 \\\n  --source testazurecontainer1.azurecr.io/\"${opsera-imagename}:${opsera-imagetag}\" \\\n  --image ${opsera-imagename}:prodnew",
+            "scriptId": "",
+            "type": "github",
+            "gitToolId": "6705127d20f7260012756922",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "gitRepository": "gradlehelloworld",
+            "gitRepositoryID": "prasanna2482/gradlehelloworld",
+            "defaultBranch": "demo1",
+            "enableInputParameters": true,
+            "inputParameters": [
+              {
+                "parameterId": "6826b212f4413b4d4cd6e72a",
+                "parameterName": "opsera-imagename"
+              },
+              {
+                "parameterId": "6826b22143c5c40ad964abff",
+                "parameterName": "opsera-imagetag"
+              }
+            ],
+            "saveEnvironmentVariables": false,
+            "environmentVariables": [],
+            "azureRegion": "",
+            "machine_type": "",
+            "resourceGroupName": "",
+            "artifactStepId": "",
+            "sshUrl": "git@github.com:prasanna2482/gradlehelloworld.git",
+            "gitUrl": "https://github.com/prasanna2482/gradlehelloworld"
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "publish"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [
+          {
+            "type": "pipeline",
+            "value": "azure-cli_68245b709b62af2f518f5d01"
+          }
+        ],
+        "active": true,
+        "dependencies": [
+          "6837fbf40c68946162b0d81b"
+        ],
+        "updatedAt": "2025-05-14T08:59:28.340Z",
+        "_id": "68245b709b62af2f518f5d01"
+      },
+      {
+        "name": "Argo CD AKS",
+        "notes": "",
+        "description": "",
+        "tool": {
+          "tool_identifier": "argo",
+          "configuration": {
+            "existingContent": "image",
+            "dockerStepID": "67aeab95b3bb6a001299d9c1",
+            "gitFilePath": "",
+            "gitRepository": "gradlehelloworld",
+            "defaultBranch": "demo1",
+            "gitWorkspace": "",
+            "type": "github",
+            "gitToolId": "6705127d20f7260012756922",
+            "toolConfigId": "67afae7089d78c0012790528",
+            "toolUrl": "https://argocd-qapfe9pswgrieb.prodqa-private.opsera.io",
+            "gitUrl": "https://github.com/prasanna2482/gradlehelloworld",
+            "sshUrl": "git@github.com:prasanna2482/gradlehelloworld.git",
+            "userName": "admin",
+            "applicationName": "cohtesting",
+            "gitRepositoryID": "prasanna2482/gradlehelloworld",
+            "bitbucketWorkspace": "",
+            "bitbucketWorkspaceName": "",
+            "rollbackEnabled": false,
+            "repositoryTag": "",
+            "dynamicVariables": false,
+            "applicationCluster": "",
+            "yamlPath": "",
+            "kustomizeFlag": false,
+            "helmFlag": false,
+            "imageUrl": "",
+            "isBlueGreenDeployment": false,
+            "dockerStepType": "azure_acr_push",
+            "customParameterId": "",
+            "imageReference": "",
+            "customImageTag": false,
+            "platform": "",
+            "azureToolConfigId": "",
+            "azureCredentialId": "",
+            "resource": "https://management.azure.com",
+            "azureRegistryName": "",
+            "azureRepoName": "",
+            "acrLoginUrl": "",
+            "awsToolConfigId": "",
+            "ecrRepoName": "",
+            "imageRepository": "",
+            "imageTag": "",
+            "nexusToolConfigId": "",
+            "dockerPort": "",
+            "containerRegistryId": "",
+            "containerRegistryFlag": false,
+            "nexusRepoName": "",
+            "delayTime": 5,
+            "updateImageToScmFlag": false,
+            "branch": "demo1",
+            "gitBranch": "demo1",
+            "workspace": "",
+            "workspaceName": ""
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          },
+          "job": null
+        },
+        "trigger": [],
+        "type": [
+          "deploy"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "active": true,
+        "dependencies": [
+          "682587f71faa27e06d250d45"
+        ],
+        "updatedAt": "2025-02-21T13:57:13.116Z",
+        "_id": "67b88639a012d8001206844b"
+      }
+    ],
+    "run_count": 205,
+    "last_run": {
+      "status": "reset"
+    }
+  },
+  "tags": [],
+  "type": [
+    "sdlc"
+  ],
+  "owner": "5f75953446564c10379902bb",
+  "roles": [
+    {
+      "role": "administrator",
+      "user": "qaprod@protonmail.com",
+      "group": null
+    }
+  ],
+  "organizationName": "protonmail.com",
+  "account": "org109-acc",
+  "name": "COH-gradle-docker-acr-test-prasana",
+  "template": "5ec7c8cedc73d9532e860b67",
+  "templateIdentifier": "blank_pipeline_template",
+  "description": "Create a new template from scratch.",
+  "project": {
+    "name": "",
+    "project_id": ""
+  },
+  "active": true,
+  "createdAt": "2025-02-11T19:47:04.285Z",
+  "updatedAt": "2026-02-01T14:01:48.468Z",
+  "__v": 0,
+  "owner_name": "QA User-Production",
+  "parameters": [
+    {
+      "name": "opsera-imagepath",
+      "value": "",
+      "scope": "pipeline",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-test124",
+      "value": "",
+      "scope": "pipeline",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": true,
+      "lookupListId": "6826286a65ce1a9b8ae5e955",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-imagename",
+      "value": "gradlehello",
+      "scope": "pipeline",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-imagetag",
+      "value": "",
+      "scope": "pipeline",
+      "vaultEnabled": true,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-appname",
+      "value": "testcli2",
+      "scope": "pipeline",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    },
+    {
+      "name": "opsera-ver",
+      "value": "3.8.4",
+      "scope": "pipeline",
+      "vaultEnabled": false,
+      "vaultKey": "",
+      "selectField": false,
+      "lookupListId": "",
+      "tags": [],
+      "account": "org109-acc",
+      "active": true,
+      "__v": 0
+    }
+  ]
+}
