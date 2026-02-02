@@ -383,61 +383,6 @@
         "_id": "67aba99ce672a20012bde52a"
       },
       {
-        "name": "ACR Push",
-        "description": "",
-        "tool": {
-          "tool_identifier": "run_job",
-          "configuration": {
-            "scripts": [
-              {
-                "active": true,
-                "type": "manual_entry",
-                "scriptRepository": "",
-                "scriptName": "ACR Push",
-                "scriptPath": "",
-                "scriptLibraryId": "",
-                "script": "apt install sudo\nsudo apt update\nsudo apt install docker.io -y\ndocker --version\nsudo dockerd &\ncurl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash\naz version\n#az login --service-principal --username ******** --tenant ******** --password ********\n# Get token\nTOKEN=$(az acr login --name testazurecontainer1 --expose-token --query accessToken -o tsv)\n# Log in to ACR with Docker using the token (if Docker works at all)\ndocker login testazurecontainer1.azurecr.io -u 00000000-0000-0000-0000-000000000000 -p \"$TOKEN\"\ndocker load --input /home/jenkins/agent/workspace/.docker-images/67aba938f35d8502fb74092d_67aba99ce672a20012bde52a_113.tar\ndocker tag gradlehello:32552af testacrcontainerregistry2.azurecr.io/gradlehello:32552af\ndocker push testacrcontainerregistry2.azurecr.io/gradlehello:production",
-                "scriptUrl": "",
-                "tags": [],
-                "scriptToolType": ""
-              }
-            ],
-            "environmentVariables": [],
-            "secretEnvironmentVariables": [],
-            "plugins": [
-              {
-                "name": "Plugin 1",
-                "plugin": "registry_tool",
-                "configuration": {
-                  "toolIdentifier": "azure_cli",
-                  "toolId": "67c56035e1083700121afefa",
-                  "connectionVariables": []
-                }
-              }
-            ]
-          },
-          "job": null
-        },
-        "trigger": [],
-        "type": [
-          "script"
-        ],
-        "orchestration_type": "standard",
-        "notification": [],
-        "tags": [
-          {
-            "type": "pipeline",
-            "value": "acr-push_682587f71faa27e06d250d45"
-          }
-        ],
-        "active": true,
-        "dependencies": [
-          "67aba99ce672a20012bde52a"
-        ],
-        "updatedAt": "2025-05-15T06:21:43.219Z",
-        "_id": "682587f71faa27e06d250d45"
-      },
-      {
         "name": "Azure CLI",
         "description": "",
         "tool": {
@@ -571,10 +516,55 @@
         "tags": [],
         "active": true,
         "dependencies": [
-          "682587f71faa27e06d250d45"
+          "6980d4e8d224d6ebdbd9aa27"
         ],
         "updatedAt": "2025-02-21T13:57:13.116Z",
         "_id": "67b88639a012d8001206844b"
+      },
+      {
+        "name": "ACR pUsh",
+        "notes": "",
+        "description": "",
+        "tool": {
+          "tool_identifier": "azure_acr_push",
+          "configuration": {
+            "azureToolConfigId": "6762aa6bfb14d1003364330d",
+            "buildStepId": "67aba99ce672a20012bde52a",
+            "azureRegistryName": "Test123",
+            "newRepo": false,
+            "azureRepoName": "test12345",
+            "useRunCount": false,
+            "resource": "https://management.azure.com",
+            "awsToolConfigId": "",
+            "ecrRepoName": "",
+            "acrLoginUrl": "",
+            "autoScaleEnable": true,
+            "toolType": "azure",
+            "azureCredentialId": "6762ced2f5235d00e77c28bf",
+            "isExistingContainerRegistry": false,
+            "containerRegistrySku": "basic",
+            "resourceGroup": "testprassrg",
+            "enableOutputVariables": false,
+            "outputCustomParameters": []
+          },
+          "threshold": {
+            "type": "",
+            "value": ""
+          }
+        },
+        "trigger": [],
+        "type": [
+          "publish"
+        ],
+        "orchestration_type": "standard",
+        "notification": [],
+        "tags": [],
+        "active": true,
+        "dependencies": [
+          "67aba99ce672a20012bde52a"
+        ],
+        "updatedAt": "2026-02-02T16:46:32.099Z",
+        "_id": "6980d4e8d224d6ebdbd9aa27"
       }
     ],
     "run_count": 205,
@@ -606,7 +596,7 @@
   },
   "active": true,
   "createdAt": "2025-02-11T19:47:04.285Z",
-  "updatedAt": "2026-02-01T14:01:48.468Z",
+  "updatedAt": "2026-02-02T16:48:32.341Z",
   "__v": 0,
   "owner_name": "QA User-Production",
   "parameters": [
